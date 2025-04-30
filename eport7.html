@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lessons | Moolatastic</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="MoolaCSS.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Moolatastic</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="eport.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="eport2.html">About Us</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="eport3.html">Lessons <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="eport4.html">Calculator</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="jumbotron text-center">
+        <h1 class="display-4">Lessons</h1>
+        <p class="lead">This is where you'll learn how to get your money up</p>
+    </section>
+    <section>
+        <article class="container mt-5">
+            <h1 class="display-4">Lesson 3: Credit</h1>
+            <button id="speak-button">Speak</button>
+            <script>
+                const speakButton = document.getElementById('speak-button');
+                const textToSpeak = 'Credit is the ability to borrow money with the promise that you\’ll pay it back later, usually with added interest. It allows you to buy things now and pay for them over time. Credit can come in different forms, such as credit cards, loans, or financing plans. When used responsibly, credit can be a helpful tool. However, it also requires discipline—if you borrow too much or miss payments, it can lead to debt and financial problems. Credit is important because it affects your financial future. When you borrow money, lenders keep track of how well you pay it back through something called a credit score. A good credit score can help you qualify for better loans, lower interest rates, and even housing or job opportunities. On the other hand, bad credit can make borrowing more expensive or harder to get. Learning how to manage credit wisely while you\’re young can help you build a strong financial foundation. Using credit wisely means borrowing only what you can afford to repay, paying your bills on time, and keeping balances low. It\'s smart to track your spending and avoid using credit for things you don\’t really need. Start small—some teens begin building credit by becoming authorized users on a parent\’s card or by getting a student card in college. Always read the terms before borrowing and remember: credit is a tool, not free money.';
+
+                speakButton.addEventListener('click', () => {
+                    const utterance = new SpeechSynthesisUtterance(textToSpeak);
+                    utterance.lang = 'en-US';
+                    utterance.rate = 1;
+                    utterance.pitch = 1;
+                    utterance.volume = 1;
+
+                    window.speechSynthesis.speak(utterance);
+                });
+            </script>
+            <p class="lead">Learn the basics of credit scores, credit cards, and how to use credit wisely.</p>
+            <p>Credit is the ability to borrow money with the promise that you’ll pay it back later, usually with added interest. It allows you to buy things now and pay for them over time. Credit can come in different forms, such as credit cards, loans, or financing plans. When used responsibly, credit can be a helpful tool. However, it also requires discipline—if you borrow too much or miss payments, it can lead to debt and financial problems.</p>
+            <p>Credit is important because it affects your financial future. When you borrow money, lenders keep track of how well you pay it back through something called a credit score. A good credit score can help you qualify for better loans, lower interest rates, and even housing or job opportunities. On the other hand, bad credit can make borrowing more expensive or harder to get. Learning how to manage credit wisely while you’re young can help you build a strong financial foundation.</p>
+            <p>Using credit wisely means borrowing only what you can afford to repay, paying your bills on time, and keeping balances low. It's smart to track your spending and avoid using credit for things you don’t really need. Start small—some teens begin building credit by becoming authorized users on a parent’s card or by getting a student card in college. Always read the terms before borrowing and remember: credit is a tool, not free money.</p?
+        </article>
+    </section>
+    <br>
+    <footer class="bg-dark text-light text-center">
+        <p>&copy; 2025 Moolatastic</p>
+    </footer>
+</body>
+</html>

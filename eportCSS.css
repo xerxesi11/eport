@@ -1,0 +1,49 @@
+html {
+    font: 15px arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+html {
+  font: 15px arial, sans-serif;
+  background-color: rgb(255, 255, 255);
+  padding-top: 15px;
+  padding-bottom: 15px;
+} 
+  #chatbox {
+    font: 17px arial, sans-serif;
+    height: 30px;
+    width: 90%;
+    margin-bottom: auto;
+  }
+  
+  h1 {
+    margin: auto;
+  }
+  
+  pre {
+    background-color: #f0f0f0;
+    margin-left: 20px;
+  }
+
+  .whiteH1{
+    margin-bottom: 100px;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    border-style: solid;
+    background-color: #b5b5b5;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-right: 20px;
+    padding-left: 15px;
+  }
+  jumbotron{
+    background-color: #b5b5b5;
+  }
+  .btn {
+    color: #000000;
+    background-color: #b6b6b6;
+    border-color: #000000;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lessons | Moolatastic</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="MoolaCSS.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Moolatastic</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="eport.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="eport2.html">About Us</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="eport3.html">Lessons <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="eport4.html">Calculator</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="jumbotron text-center">
+        <h1 class="display-4">Lessons</h1>
+        <p class="lead">This is where you'll learn how to get your money up</p>
+    </section>
+    <section>
+        <article class="container mt-5">
+            <h1 class="display-4">Lesson 5: Taxes</h1>
+            <button id="speak-button">Speak</button>
+            <script>
+                const speakButton = document.getElementById('speak-button');
+                const textToSpeak = 'Taxes are money that individuals and businesses are required to pay to the government. This money is used to fund public services like schools, roads, hospitals, the military, and emergency services. Taxes come in different forms, including income tax (taken from your paycheck), sales tax (added when you buy something), and property tax (paid on things like houses or land). Paying taxes is a legal responsibility and part of being a citizen. Taxes are important because they help keep society running. The government uses tax money to pay for things we all rely on, even if we don\’t think about them every day. Without taxes, we wouldn\’t have clean water, public parks, public schools, or even streetlights. Everyone who earns or spends money contributes to the system, and the amount you pay usually depends on how much you make and what you buy. Even teenagers can be affected by taxes. If you have a part-time job, your paycheck might have taxes taken out before you even get it—this is called withholding. Sometimes, you may need to file a tax return to report how much you earned and to see if you get any money back. Learning how taxes work early helps you understand your paycheck, plan for the future, and avoid problems later in life.';
+
+                speakButton.addEventListener('click', () => {
+                    const utterance = new SpeechSynthesisUtterance(textToSpeak);
+                    utterance.lang = 'en-US';
+                    utterance.rate = 1;
+                    utterance.pitch = 1;
+                    utterance.volume = 1;
+
+                    window.speechSynthesis.speak(utterance);
+                });
+            </script>
+            <p class="lead">Learn why taxes exist and how it affects you.</p>
+            <p>Taxes are money that individuals and businesses are required to pay to the government. This money is used to fund public services like schools, roads, hospitals, the military, and emergency services. Taxes come in different forms, including income tax (taken from your paycheck), sales tax (added when you buy something), and property tax (paid on things like houses or land). Paying taxes is a legal responsibility and part of being a citizen.</p>
+            <p>Taxes are important because they help keep society running. The government uses tax money to pay for things we all rely on, even if we don’t think about them every day. Without taxes, we wouldn’t have clean water, public parks, public schools, or even streetlights. Everyone who earns or spends money contributes to the system, and the amount you pay usually depends on how much you make and what you buy.</p>
+            <p>Even teenagers can be affected by taxes. If you have a part-time job, your paycheck might have taxes taken out before you even get it—this is called withholding. Sometimes, you may need to file a tax return to report how much you earned and to see if you get any money back. Learning how taxes work early helps you understand your paycheck, plan for the future, and avoid problems later in life.</p>
+        </article>
+    </section>
+    <br>
+    <footer class="bg-dark text-light text-center">
+        <p>&copy; 2025 Moolatastic</p>
+    </footer>
+</body>
+</html>

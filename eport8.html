@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lessons | Moolatastic</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="MoolaCSS.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Moolatastic</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="eport.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="eport2.html">About Us</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="eport3.html">Lessons <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="eport4.html">Calculator</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="jumbotron text-center">
+        <h1 class="display-4">Lessons</h1>
+        <p class="lead">This is where you'll learn how to get your money up</p>
+    </section>
+    <section>
+        <article class="container mt-5">
+            <h1 class="display-4">Lesson 4: Investing</h1>
+            <button id="speak-button">Speak</button>
+            <script>
+                const speakButton = document.getElementById('speak-button');
+                const textToSpeak = 'Investing is the act of putting your money into something with the goal of making it grow over time. Unlike saving, where your money sits in a safe place like a bank account, investing involves some risk—but it also offers the chance for higher rewards. Common types of investments include stocks, bonds, mutual funds, and real estate. The goal is to earn a profit, called a return, by letting your money work for you over the long term. Investing is important because it helps build wealth over time. By starting early, even with small amounts, your money has more time to grow through something called compound interest—when your earnings start earning more money on their own. Investing is one of the most effective ways to prepare for big future goals like buying a house, starting a business, or retiring comfortably. It\’s a key part of long-term financial planning. You can start investing by first learning the basics and deciding what kind of investor you want to be—safe and steady, or willing to take more risks. Many people begin with simple investments like index funds or robo-advisors, which are digital tools that help you invest automatically. It\'s also important to start with money you don\’t need right away, since investments can go up and down. As with any financial decision, it\’s smart to research, ask questions, and start small.';
+
+                speakButton.addEventListener('click', () => {
+                    const utterance = new SpeechSynthesisUtterance(textToSpeak);
+                    utterance.lang = 'en-US';
+                    utterance.rate = 1;
+                    utterance.pitch = 1;
+                    utterance.volume = 1;
+
+                    window.speechSynthesis.speak(utterance);
+                });
+            </script>
+            <p class="lead">Get started with investing and learn about different types of investments.</p>
+            <p>Investing is the act of putting your money into something with the goal of making it grow over time. Unlike saving, where your money sits in a safe place like a bank account, investing involves some risk—but it also offers the chance for higher rewards. Common types of investments include stocks, bonds, mutual funds, and real estate. The goal is to earn a profit, called a return, by letting your money work for you over the long term.</p>
+            <p>Investing is important because it helps build wealth over time. By starting early, even with small amounts, your money has more time to grow through something called compound interest—when your earnings start earning more money on their own. Investing is one of the most effective ways to prepare for big future goals like buying a house, starting a business, or retiring comfortably. It’s a key part of long-term financial planning.</p>
+            <p>You can start investing by first learning the basics and deciding what kind of investor you want to be—safe and steady, or willing to take more risks. Many people begin with simple investments like index funds or robo-advisors, which are digital tools that help you invest automatically. It's also important to start with money you don’t need right away, since investments can go up and down. As with any financial decision, it’s smart to research, ask questions, and start small.</p
+        </article>
+    </section>
+    <br>
+    <footer class="bg-dark text-light text-center">
+        <p>&copy; 2025 Moolatastic</p>
+    </footer>
+</body>
+</html>
